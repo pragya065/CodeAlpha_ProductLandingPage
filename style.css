@@ -1,0 +1,123 @@
+:root{
+    --col: #d8d7df;
+    --text: hsl(229, 78%, 13%);
+}
+
+.slider-section{
+    background: rgb(201, 201, 192)
+}
+
+#header-img {
+    width: 100px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--col);
+    padding: 10px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration:none; 
+    color: var(--text);
+    padding: 0 10px; 
+    font-size: 1.5rem;
+}
+
+.nav-links a:hover{
+    color: rgb(209, 21, 52)
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.the-product{
+    font-size: 50px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "montaga";
+    color:rgb(46, 4, 85);
+    cursor: pointer;
+}
+.mobile-menu{
+    display: none;
+}
+
+.slider-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:130px;
+    background-color:rgb(171, 164, 215)
+    
+}
+img{
+    width:400px;
+    
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "montaga";
+    color:rgb(34, 11, 56);
+
+}
+section p{
+ color:rgb(34, 11, 56);
+ font-size: 30px;
+ font-family: "montaga";
+ align-items: center; 
+ 
+}
+section button{
+    background-color: #cec3c3;
+    border-radius: 30px;
+    color: rgb(49, 5, 49);
+    padding: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+section button:hover{
+    text-decoration: underline;
+    color:rgb(239, 161, 174);
+}
+button span{
+      font-size: 1rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .nav-links{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .the-product{
+       font-size: 40px;    
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 250px;
+    }
+
+}
